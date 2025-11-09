@@ -3,6 +3,8 @@ import { ref, reactive, computed } from 'vue'
 import { TodoList, TODO } from '../model/TODO'
 import TODOComponent from './TODOComponent.vue'
 
+import '../assets/Todos.css'
+
 const nouvelleTache = ref('')
 const liste = reactive(new TodoList())
 
@@ -103,7 +105,7 @@ const supprimerTachesCompletees = () => {
   </div>
 </template>
 
-<style scoped>
+<!-- <style scoped>
 .todos {
   max-width: 400px;
   margin: 20px auto;
@@ -144,4 +146,4 @@ button.delete-completed {
   padding: 2px 6px;
   margin-left: 5px;
 }
-</style>
+</style> -->

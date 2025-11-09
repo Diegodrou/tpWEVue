@@ -2,6 +2,8 @@
 import { ref, defineProps, defineEmits } from 'vue'
 import type { TODO } from '../model/TODO'
 
+import '../assets/TODOComponent.css'
+
 const props = defineProps<{ tache: TODO }>()
 const emit = defineEmits<{
   (e: 'supprimer', tache: TODO): void
